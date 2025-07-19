@@ -16,14 +16,14 @@ class Animal:
 
 class Dog(Animal):
     def make_sound(self):
-        return(f"woof!")
+        return(f"woof!") #用print的話 一樣會有woof! 只是因為函式本身沒有用 return 回傳任何值 所以會出現 None 
 
 class Cat(Animal):
     def make_sound(self):
-        return(f"喵～～")
+        return(f"喵～～") 
 
 def play_sound(animal:Animal):
-    return(f"{animal.name}的聲音：{animal.make_sound()}")
+    return(f"{animal.name}的聲音：{animal.make_sound()}") 
 
 a1 = Dog("熊仔")
 a2 = Cat("努努")
