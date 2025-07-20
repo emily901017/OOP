@@ -22,7 +22,7 @@ class Cat(Animal):
     def make_sound(self):
         return(f"喵～～") 
 
-def play_sound(animal:Animal):
+def play_sound(animal:Animal): #冒號後面寫的 Animal 是一種「型別註解」（Type Hint），意思是：希望傳進來的這個東西是 Animal 類別（或是繼承它的子類別)的物件。
     return(f"{animal.name}的聲音：{animal.make_sound()}") 
 
 a1 = Dog("熊仔")
