@@ -10,7 +10,7 @@
 import math
 
 class CircleTool:
-    @staticmethod
+    @staticmethod #不用建物件，也不用self
     def area(radius):
         return math.pi * radius ** 2
 
